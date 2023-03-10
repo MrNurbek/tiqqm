@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row align-items-center bg-light px-lg-5">
+        <div class="col-12 col-md-8">
+            <div class="d-flex justify-content-between">
+                <div class="bg-primary text-white text-center py-2" style="width: 100px;">IMA</div>
+                <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3"
+                     style="width: calc(100% - 100px); padding-left: 90px; text-align: center;">
+                    <div class="text-truncate"><a class="text-secondary" href="">Termiz davlat universiteti</a></div>
+                    <div class="text-truncate"><a class="text-secondary" href="">Texnologiyalar va innovatsiyalarni
+                        qo'llab quvvatlash markazi</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-right d-none d-md-block">
+            {{ data }}
+        </div>
+    </div>
+    <div class="row align-items-center py-2 px-lg-5">
+        <div class="col-lg-4">
+            <a href="" class="navbar-brand d-none d-lg-block">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">TerDU</span>TIQQM</h1>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+ <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">TerDU</span>TIQQM</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meyoriy huquqiy hujjatlar</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="https://my.ima.uz/legal-documents/international-legal" class="dropdown-item">Xalqaro me'yoriy huquqiy hujjatlar</a>
+                            <a href="https://my.ima.uz/legal-documents/laws" class="dropdown-item">Qonunlar va qarorlar</a>
+                            <a href="https://my.ima.uz/legal-documents/decisions" class="dropdown-item">O'zbekiston Respublikasi Prezidentining qaror va farmonlari</a>
+                            <a href="https://my.ima.uz/legal-documents/discussion-of-cabinet-of-ministers" class="dropdown-item">O'zbekiston Respublikasi Vazirlar Mahkamasining qarorlari</a>
+                            <a href="https://my.ima.uz/legal-documents/sphere" class="dropdown-item">Sohaga oid hujjatlar</a>
+
+                        </div>
+                    </div>
+                    <a href="https://my.ima.uz/service/publications" class="nav-item nav-link">Nashrlar</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Xizmatlar</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="https://baza.ima.uz/" class="dropdown-item">Intelerktual mukl obektlari bazasi</a>
+                            <a href="https://my.ima.uz/service/details-of-payment" class="dropdown-item">Xizmatlar uchun to'lov rekvizitlari</a>
+                            <a href="https://my.ima.uz/service/attorney" class="dropdown-item">Patent vakilliklari</a>
+                            <a href="https://my.ima.uz/study-v1/main/index" class="dropdown-item">O'quv qo'llanma</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-item nav-link">Yutuqlar</a>
+                </div>
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
