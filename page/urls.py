@@ -23,6 +23,9 @@ urlpatterns = [
                   path("", my_view, name="home"),
                   path("news/<int:id>", newsView, name="news"),
                   path("patent", patentView, name="patent"),
+                  path("dgu", dguView, name="dgu"),
+                  path("bgu", bguView, name="bgu"),
+                  path("mualliflikhuquqi", mualliflikhuquqiView, name="mualliflikhuquqi"),
 
               ] + static(settings.STATIC_URL)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

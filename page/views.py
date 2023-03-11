@@ -52,7 +52,7 @@ def dguView(request):
         "dgu": DGU.objects.all(),
 
     }
-    return render(request, 'dgu.html', context=dict)
+    return render(request, 'axborot.html', context=dict)
 
 
 def bguView(request):
