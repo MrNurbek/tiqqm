@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                    <h3 class="m-0">Patentlar</h3>
+                    <h5 class="m-0" style="text-transform: uppercase;"> Ixtiro, foydali model, sanoat namunalari va seleksiya yutuqlari uchun olingan patentlar</h5>
 <!--                    <a class="text-secondary font-weight-medium text-decoration-none" href="{% url 'patent'  %}">View All</a>-->
                 </div>
                 <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative mb-3 mb-lg-0">
@@ -90,36 +90,36 @@
                     <h3 class="m-0">Kategoriyalar</h3>
 
                 </div>
-                <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
-                    <img class="img-fluid w-100 h-100" src="/static/main/img/cat-500x80-1.jpg"
+                <div class="position-relative overflow-hidden mb-3" style="height: 100px;">
+                    <img class="img-fluid w-100 h-100" src="/static/main/img/patent.jpg"
                          style="object-fit: cover;">
-                    <a href="{% url 'patent'  %}"
-                       class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
-                        Patentlar
+                    <a href="{% url 'patent'  %} "
+                       class="overlay align-items-center justify-content-center  m-0 text-white text-decoration-none" >
+
                     </a>
                 </div>
-                <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
-                    <img class="img-fluid w-100 h-100" src="/static/main/img/cat-500x80-2.jpg"
+                <div class="position-relative overflow-hidden mb-3" style="height: 100px;">
+                    <img class="img-fluid w-100 h-100" src="/static/main/img/dgu.jpg"
                          style="object-fit: cover;">
                     <a href="{% url 'dgu'  %}"
                        class="overlay align-items-center justify-content-center  m-0 text-white text-decoration-none">
-                        AXBOROT-KOMMUNIKATSIYA TEXNOLOGIYALARIGA OID DASTURLAR UCHUN OLINGAN GUVOHNOMALAR
+
                     </a>
                 </div>
-                <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
-                    <img class="img-fluid w-100 h-100" src="/static/main/img/cat-500x80-3.jpg"
+                <div class="position-relative overflow-hidden mb-3" style="height: 100px;">
+                    <img class="img-fluid w-100 h-100" src="/static/main/img/pgu.jpg"
                          style="object-fit: cover;">
                     <a href="{% url 'bgu'  %}"
                        class="overlay align-items-center justify-content-center  m-0 text-white text-decoration-none">
-                        ELEKTRON MA’LUMOTLAR BAZALARI UCHUN OLINGAN GUVOHNOMALAR
+
                     </a>
                 </div>
-                <div class="position-relative overflow-hidden" style="height: 80px;">
-                    <img class="img-fluid w-100 h-100" src="/static/main/img/cat-500x80-4.jpg"
+                <div class="position-relative overflow-hidden" style="height: 100px;">
+                    <img class="img-fluid w-100 h-100" src="/static/main/img/muallif.jpg"
                          style="object-fit: cover;">
                     <a href="{% url 'mualliflikhuquqi'  %}"
                        class="overlay align-items-center justify-content-center  m-0 text-white text-decoration-none">
-                        MUALLIFLIK HUQUQI BILAN HIMOYA QILINADIGAN MATERIALLAR
+
                     </a>
                 </div>
             </div>
@@ -186,7 +186,7 @@
             </div>
             <div class="col-lg-6 py-3">
                 <div class="bg-light py-2 px-4 mb-3">
-                    <h5 class="m-0" style="text-transform: uppercase;">mualliflik huquqi bilan himoya qilinadigan materiallar</h5>
+                    <h5 class="m-0" style="text-transform: uppercase;">mualliflik huquqi bilan himoya qilinadigan turli materiallar</h5>
                 </div>
                 <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
                     {% for p in mualliflikhuquqi %}
