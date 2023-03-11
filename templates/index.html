@@ -78,7 +78,7 @@
                                 <span class="px-2 text-white">/</span>
                                 <a class="text-black" href="{% url 'patent'  %}">{{ p.date }}</a>
                             </div>
-                            <a class="h2 m-0 text-black font-weight-bold" href="{% url 'patent'  %}">{{ p.nomi }}</a>
+                            <a class="h4 m-0 text-black font-weight-bold" href="{% url 'patent'  %}">{{ p.nomi }}</a>
                         </div>
                     </div>
                     {% endfor %}
@@ -142,11 +142,11 @@
                 <img class="img-fluid w-100 h-100" src="/media/{{ p.image }}" style="object-fit: cover;">
                 <div class="overlay">
                     <div class="mb-1" style="font-size: 13px;">
-                        <a class="text-white" href="{% url 'dgu'  %}">{{ p.fakultetnomi }}</a>
+                        <a class="text-black" href="{% url 'dgu'  %}">{{ p.fakultetnomi }}</a>
                         <span class="px-1 text-white">/</span>
-                        <a class="text-white" href="{% url 'dgu'  %}">{{ p.date }}</a>
+                        <a class="text-black" href="{% url 'dgu'  %}">{{ p.date }}</a>
                     </div>
-                    <a class="h4 m-0 text-white" href="{% url 'dgu'  %}">{{ p.nomi }}</a>
+                    <a class="h5 m-0 text-black" href="{% url 'dgu'  %}">{{ p.nomi }}</a>
                 </div>
             </div>
             {% endfor %}
@@ -177,7 +177,7 @@
                                 <span class="px-1">/</span>
                                 <span >{{ p.date }}</span>
                             </div>
-                            <a class="h4 m-0" href="{% url 'bgu'  %}">{{ p.nomi }}</a>
+                            <a class="h5 m-0" href="{% url 'bgu'  %}">{{ p.nomi }}</a>
                         </div>
                     </div>
                     {% endfor %}
